@@ -114,7 +114,8 @@ export const WebBrowser = ({ app }: WebBrowserProps) => {
                   src={app.url}
                   className="w-[calc(100%+20px)] h-full border-0 no-scrollbar"
                   title={app.name}
-                  sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                  sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-storage-access-by-user-activation allow-modals"
+                  allow="storage-access *; cookies *"
                />
             )}
          </div>
