@@ -4,28 +4,49 @@ import { useState } from 'react'
 
 export const Calculator = () => {
   const [display, setDisplay] = useState('0')
-  const [prev, setPrev] = useState<number | null>(null)
-  const [operation, setOperation] = useState<string | null>(null)
+  const [prevValue, setPrevValue] = useState<number | null>(null)
+  const [operator, setOperator] = useState<string | null>(null)
+  const [waitingForOperand, setWaitingForOperand] = useState(false)
 
-  const handleNumber = (num: string) => {
-    if (display === '0') {
-      setDisplay(num)
+  const inputDigit = (digit: string) => {
+    if (waitingForOperand) {
+      setDisplay(digit)
+      setWaitingForOperand(false)
     } else {
-      setDisplay(display + num)
+      setDisplay(display === '0' ? digit : display + digit)
     }
   }
 
-  const handleOperation = (op: string) => {
-    const current = parseFloat(display)
-    if (prev === null) {
-      setPrev(current)
-    } else if (operation) {
-      const result = calculate(prev, current, operation)
-      setDisplay(result.toString())
-      setPrev(result)
+  const inputDot = () => {
+    if (waitingForOperand) {
+      setDisplay('0.')
+      setWaitingForOperand(false)
+    } else if (!display.includes('.')) {
+      setDisplay(display + '.')
     }
-    setOperation(op)
+  }
+
+  const clearAll = () => {
     setDisplay('0')
+    setPrevValue(null)
+    setOperator(null)
+    setWaitingForOperand(false)
+  }
+
+  const performOperation = (nextOperator: string) => {
+    const inputValue = parseFloat(display)
+
+    if (prevValue === null) {
+      setPrevValue(inputValue)
+    } else if (operator) {
+      const currentValue = prevValue || 0
+      const newValue = calculate(currentValue, inputValue, operator)
+      setPrevValue(newValue)
+      setDisplay(String(newValue))
+    }
+
+    setWaitingForOperand(true)
+    setOperator(nextOperator)
   }
 
   const calculate = (a: number, b: number, op: string) => {
@@ -34,58 +55,62 @@ export const Calculator = () => {
       case '-': return a - b
       case '*': return a * b
       case '/': return b !== 0 ? a / b : 0
+      case '=': return b
       default: return b
     }
   }
 
   const handleEquals = () => {
-    if (operation && prev !== null) {
-      const result = calculate(prev, parseFloat(display), operation)
-      setDisplay(result.toString())
-      setPrev(null)
-      setOperation(null)
-    }
+    if (!operator) return
+
+    const inputValue = parseFloat(display)
+    const result = calculate(prevValue || 0, inputValue, operator)
+
+    setDisplay(String(result))
+    setPrevValue(null)
+    setOperator(null)
+    setWaitingForOperand(true)
   }
 
   const buttons = [
-    ['7', '8', '9', '/'],
-    ['4', '5', '6', '*'],
-    ['1', '2', '3', '-'],
-    ['0', '.', '=', '+'],
+    ['C', '/', '*', '-'],
+    ['7', '8', '9', '+'],
+    ['4', '5', '6', '='],
+    ['1', '2', '3', '.'],
+    ['0', ''],
   ]
 
   return (
-    <div className="w-full h-full flex flex-col bg-gradient-to-b from-gray-900 to-black p-4">
-      <div className="bg-black rounded-lg p-6 mb-4">
-        <div className="text-right text-4xl text-white font-light break-words">
+    <div className="w-full h-full flex flex-col bg-black p-4">
+      <div className="bg-gray-900 rounded-2xl p-6 mb-4 flex items-end justify-end h-32">
+        <div className="text-right text-5xl text-white font-light break-all">
           {display}
         </div>
       </div>
+
       <div className="grid grid-cols-4 gap-3 flex-1">
-        {buttons.map((row, i) => (
-          <div key={i} className="col-span-4 grid grid-cols-4 gap-3">
-            {row.map((btn) => (
-              <button
-                key={btn}
-                onClick={() => {
-                  if (btn === '=') handleEquals()
-                  else if (['+', '-', '*', '/'].includes(btn)) handleOperation(btn)
-                  else handleNumber(btn)
-                }}
-                className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-lg text-xl transition-colors"
-              >
-                {btn}
-              </button>
-            ))}
-          </div>
+        <button onClick={clearAll} className="bg-gray-300 hover:bg-gray-400 text-black font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95">C</button>
+        <button onClick={() => performOperation('/')} className={`font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95 ${operator === '/' ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'}`}>÷</button>
+        <button onClick={() => performOperation('*')} className={`font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95 ${operator === '*' ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'}`}>×</button>
+        <button onClick={() => performOperation('-')} className={`font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95 ${operator === '-' ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'}`}>−</button>
+
+        {['7', '8', '9'].map(n => (
+          <button key={n} onClick={() => inputDigit(n)} className="bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95">{n}</button>
         ))}
+        <button onClick={() => performOperation('+')} className={`font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95 ${operator === '+' ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'}`}>+</button>
+
+        {['4', '5', '6'].map(n => (
+          <button key={n} onClick={() => inputDigit(n)} className="bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95">{n}</button>
+        ))}
+        <button onClick={handleEquals} className="row-span-2 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-2xl text-2xl h-full w-16 flex items-center justify-center transition-all active:scale-95">=</button>
+
+        {['1', '2', '3'].map(n => (
+          <button key={n} onClick={() => inputDigit(n)} className="bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95">{n}</button>
+        ))}
+
+        <button onClick={() => inputDigit('0')} className="col-span-2 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-full text-2xl h-16 w-full flex items-center justify-start pl-7 transition-all active:scale-95">0</button>
+        <button onClick={inputDot} className="bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-full text-2xl h-16 w-16 flex items-center justify-center transition-all active:scale-95">.</button>
       </div>
-      <button
-        onClick={() => { setDisplay('0'); setPrev(null); setOperation(null) }}
-        className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-3 rounded-lg mt-4"
-      >
-        C
-      </button>
     </div>
   )
 }

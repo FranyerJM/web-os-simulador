@@ -15,6 +15,7 @@ export const WebBrowser = ({ app }: WebBrowserProps) => {
    const [isCredsOpen, setIsCredsOpen] = useState(false)
    const [showPassword, setShowPassword] = useState(false)
    const [isControlsVisible, setIsControlsVisible] = useState(false)
+   const [isCookieEnabled, setIsCookieEnabled] = useState(true)
    const [isLoading, setIsLoading] = useState(false)
 
    useEffect(() => {
@@ -22,6 +23,20 @@ export const WebBrowser = ({ app }: WebBrowserProps) => {
       setUsername(creds?.username || '')
       setPassword(creds?.password || '')
    }, [app.id, getCredentials])
+
+   useEffect(() => {
+      // Simular activación automática de cookies
+      if (isCookieEnabled) {
+         const timer = setTimeout(() => {
+            // Solo mostrar si no es una url bloqueada
+            if (!isBlockedUrl(app.url)) {
+               // Opcional: Notificar visualmente que las cookies están activas
+               // console.log("Cookies activadas para", app.name)
+            }
+         }, 1000)
+         return () => clearTimeout(timer)
+      }
+   }, [app.id, isCookieEnabled])
 
    const handleSave = () => {
       setCredentials(app.id, { username, password })
@@ -41,6 +56,18 @@ export const WebBrowser = ({ app }: WebBrowserProps) => {
       setTimeout(() => setIsLoading(false), 1000)
    }
 
+   const toggleCookies = () => {
+      if (isCookieEnabled) {
+         if (confirm('¿Desactivar cookies para este sitio? Podría dejar de funcionar correctamente.')) {
+            setIsCookieEnabled(false)
+         }
+      } else {
+         if (confirm('¿Activar cookies para este sitio?')) {
+            setIsCookieEnabled(true)
+         }
+      }
+   }
+
    const hasCreds = !!getCredentials(app.id)?.username
    const isBlockedUrl = (url?: string) => url && (url.includes('google.com') || url.includes('youtube.com') || url.includes('spotify.com'))
 
@@ -52,6 +79,15 @@ export const WebBrowser = ({ app }: WebBrowserProps) => {
                   <span className="text-green-500">🔒</span>
                   <span className="truncate">{app.url || 'about:blank'}</span>
                </div>
+
+               <button
+                  onClick={toggleCookies}
+                  className={`p-2 rounded-full transition-colors ${isCookieEnabled ? 'text-yellow-500 hover:bg-yellow-900/20' : 'text-gray-500 hover:bg-gray-800'}`}
+                  title={isCookieEnabled ? "Cookies Activadas" : "Cookies Desactivadas"}
+               >
+                  <span className="text-xs">🍪</span>
+               </button>
+
                <button onClick={simulateWebNotification} className="p-2 text-gray-400 hover:text-white">
                   <Bell size={16} />
                </button>
@@ -63,10 +99,11 @@ export const WebBrowser = ({ app }: WebBrowserProps) => {
                   onClick={() => {
                      const types = ['pdf', 'jpg', 'png', 'zip', 'docx']
                      const type = types[Math.floor(Math.random() * types.length)]
+                     const size = (Math.random() * 10 + 0.5).toFixed(1)
                      addDownloadedFile({
                         name: `archivo_descargado_${Math.floor(Math.random() * 1000)}.${type}`,
                         type: type === 'jpg' || type === 'png' ? 'image' : 'document',
-                        size: `${(Math.random() * 10 + 0.5).toFixed(1)} MB`
+                        size: `${size} MB`
                      })
                   }}
                   className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors"
@@ -114,8 +151,8 @@ export const WebBrowser = ({ app }: WebBrowserProps) => {
                   src={app.url}
                   className="w-[calc(100%+20px)] h-full border-0 no-scrollbar"
                   title={app.name}
-                  sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-storage-access-by-user-activation allow-modals"
-                  allow="storage-access *; cookies *"
+                  sandbox="allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                  allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share; serial; cross-origin-isolated; storage-access"
                />
             )}
          </div>
