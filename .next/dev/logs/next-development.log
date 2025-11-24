@@ -1,0 +1,1029 @@
+[00:00:03.805] Server  LOG      ✓ Ready in 2.7s
+[00:00:06.871] Server  LOG      ○ Compiling / ...
+[00:00:12.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.930] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+-                           __processed_c33d62fc-96ae-4d5d-a168-5a14cd4af62f__="true"
+                          >
+                  ...
+
+[00:00:12.930] Browser LOG     Initializing PeerJS with ID: 223309
+[00:00:12.931] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:12.931] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:12.931] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764000881153}
+[00:00:13.507] Browser LOG     My peer ID is: 223309
+[00:02:04.894] Server  LOG      ✓ Compiled in 263ms
+[00:03:32.394] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:32.803] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           __processed_ff5b11d8-f0e5-473e-aa12-dc21797e7fbd__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:03:32.803] Browser LOG     Initializing PeerJS with ID: 223309
+[00:03:32.803] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:32.803] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:03:32.803] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764001081014}
+[00:03:33.461] Browser LOG     My peer ID is: 223309
+[00:06:50.477] Server  LOG      ✓ Compiled in 552ms
+[00:12:46.470] Server  LOG      ✓ Compiled in 218ms
+[00:12:46.714] Browser LOG     Initializing PeerJS with ID: 223309
+[00:12:47.692] Browser LOG     My peer ID is: 223309
+[00:14:35.520] Server  LOG      ✓ Compiled in 340ms
+[00:16:04.925] Server  LOG      ✓ Compiled in 158ms
+[00:16:42.326] Server  LOG      ✓ Compiled in 474ms
+[00:16:47.037] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:49.700] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           __processed_a453f350-88b3-41b0-916f-946b3cb50804__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:16:49.700] Browser LOG     Initializing PeerJS with ID: 223309
+[00:16:49.700] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:16:49.700] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:16:49.700] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764001876344}
+[00:16:49.700] Browser LOG     My peer ID is: 223309
+[00:17:01.636] Server  LOG      ✓ Compiled in 275ms
+[00:19:53.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:53.847] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           __processed_c1e98588-b5a7-4655-89f7-f0164cf37d3b__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:19:54.107] Browser LOG     Initializing PeerJS with ID: 223309
+[00:19:54.107] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:54.107] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:19:54.107] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764002062295}
+[00:19:54.969] Browser LOG     My peer ID is: 223309
+[00:22:44.238] Server  LOG      ✓ Compiled in 488ms
+[00:22:44.825] Browser LOG     Initializing PeerJS with ID: 223309
+[00:22:46.619] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:46.806] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           __processed_d55db4b8-bc10-4c2d-92fa-bc72a7f23996__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:22:46.806] Browser LOG     Initializing PeerJS with ID: 223309
+[00:22:47.040] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:47.040] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:22:47.040] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764002235142}
+[00:22:47.695] Browser LOG     My peer ID is: 223309
+[00:23:53.443] Server  LOG      ✓ Compiled in 243ms
+[00:26:36.356] Server  WARN     ⚠ Cross origin request detected from 10.0.0.51 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:26:36.942] Browser LOG     Initializing PeerJS with ID: 376465
+[00:26:36.942] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:36.942] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:26:36.943] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.0.0.51:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.0.0.51:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764002465146}
+[00:26:37.872] Browser LOG     My peer ID is: 376465
+[00:31:24.310] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:31:24.310] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:31:24.310] Browser LOG     Peer disconnected, reconnecting...
+[00:31:24.310] Browser LOG     My peer ID is: 376465
+[00:48:40.686] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:40.686] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:40.686] Browser LOG     Peer disconnected, reconnecting...
+[00:48:40.686] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:40.686] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:40.686] Browser LOG     Peer disconnected, reconnecting...
+[00:48:40.686] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:40.686] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:40.686] Browser LOG     Peer disconnected, reconnecting...
+[00:48:40.686] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:40.686] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:40.686] Browser LOG     Peer disconnected, reconnecting...
+[00:48:40.686] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:40.686] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:40.686] Browser LOG     Peer disconnected, reconnecting...
+[00:48:40.686] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:40.686] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:40.686] Browser LOG     Peer disconnected, reconnecting...
+[00:48:41.703] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:41.703] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:41.703] Browser LOG     Peer disconnected, reconnecting...
+[00:48:41.703] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:48:41.703] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:48:41.703] Browser LOG     Peer disconnected, reconnecting...
+[00:48:42.710] Browser LOG     My peer ID is: 223309
+[00:50:56.353] Server  LOG      ✓ Compiled in 1073ms
+[00:50:56.739] Browser LOG     Initializing PeerJS with ID: 223309
+[00:50:57.701] Browser LOG     My peer ID is: 223309
+[00:51:08.050] Server  LOG      ✓ Compiled in 325ms
+[00:51:46.919] Server  LOG      ✓ Compiled in 449ms
+[00:52:26.040] Server  LOG      ✓ Compiled in 366ms
+[00:53:25.342] Server  LOG      ✓ Compiled in 824ms
+[00:53:31.101] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:33.693] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           __processed_b7594ff5-5517-4f0a-83de-eaeb1c8ec44f__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[00:53:33.693] Browser LOG     Initializing PeerJS with ID: 223309
+[00:53:33.693] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:53:33.693] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:53:33.693] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764004080247}
+[00:53:33.693] Browser LOG     My peer ID is: 223309
+[00:55:15.435] Server  LOG      ✓ Compiled in 139ms
+[00:58:00.119] Browser LOG     Initializing PeerJS with ID: 619448
+[00:58:00.119] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:58:00.119] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:58:00.119] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.0.0.51:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.0.0.51:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764004348233}
+[00:58:00.910] Browser LOG     My peer ID is: 619448
+[00:59:39.600] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[00:59:39.600] Browser ERROR   PeerJS Error: {"type":"network"}
+[00:59:39.600] Browser LOG     Peer disconnected, reconnecting...
+[00:59:39.600] Browser LOG     My peer ID is: 619448
+[01:27:23.743] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:27:23.743] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:27:23.743] Browser LOG     Peer disconnected, reconnecting...
+[01:27:23.743] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:27:23.743] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:27:23.743] Browser LOG     Peer disconnected, reconnecting...
+[01:27:23.743] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:27:23.743] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:27:23.743] Browser LOG     Peer disconnected, reconnecting...
+[01:27:23.743] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:27:23.743] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:27:23.743] Browser LOG     Peer disconnected, reconnecting...
+[01:27:23.743] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:27:23.743] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:27:23.743] Browser LOG     Peer disconnected, reconnecting...
+[01:27:23.743] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:27:23.743] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:27:23.743] Browser LOG     Peer disconnected, reconnecting...
+[01:27:23.743] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:27:23.743] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:27:23.743] Browser LOG     Peer disconnected, reconnecting...
+[01:27:24.819] Browser LOG     My peer ID is: 223309
+[01:29:37.720] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:29:37.734] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:29:37.735] Browser LOG     Peer disconnected, reconnecting...
+[01:29:38.694] Browser LOG     My peer ID is: 223309
+[01:31:45.171] Server  LOG      ✓ Compiled in 2.4s
+[01:31:45.705] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:54:23.777] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:54:23.777] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:54:23.777] Browser LOG     Peer disconnected, reconnecting...
+[01:54:23.777] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:54:23.777] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:54:23.777] Browser LOG     Peer disconnected, reconnecting...
+[01:54:23.778] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:54:23.778] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:54:23.778] Browser LOG     Peer disconnected, reconnecting...
+[01:54:23.778] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:54:23.778] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:54:23.778] Browser LOG     Peer disconnected, reconnecting...
+[01:54:23.792] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:54:23.792] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:54:23.792] Browser LOG     Peer disconnected, reconnecting...
+[01:54:23.792] Browser ERROR   ERROR PeerJS:  Error: Lost connection to server.
+[01:54:23.792] Browser ERROR   PeerJS Error: {"type":"network"}
+[01:54:23.792] Browser LOG     Peer disconnected, reconnecting...
+[01:54:24.696] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:54:24.696] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:54:24.696] Browser LOG     My peer ID is: 223309
+[01:55:00.290] Server  ERROR    ⨯ ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[01:55:00.431] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:55:02.325] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:55:02.508] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:55:11.553] Browser ERROR   uncaughtError: Error: ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[01:55:11.869] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:55:12.548] Browser ERROR   ./components/apps/files.tsx:187:89
+Parsing ecmascript source code failed
+  185 |                       <p className="text-gray-500 border-b pb-2 mb-2">Hex Dump: {selectedFile.name}</p>
+  186 |                       <p>00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|</p>
+> 187 |                       <p>00000010  02 00 3e 00 01 00 00 00  c0 2d 40 00 00 00 00 00  |..>......-@.....|</p>
+      |                                                                                         ^
+  188 |                       <p>00000020  40 00 00 00 00 00 00 00  f8 23 01 00 00 00 00 00  |@........#......|</p>
+  189 |                       <p className="mt-4 text-blue-600 font-bold">// Cache data for app {selectedFile.id.split('-')[1]}</p>
+  190 |                     </>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:56:35.303] Server  LOG      ✓ Compiled in 637ms
+[01:56:39.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:56:41.700] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+-                           __processed_10e1ec9a-bce7-4d54-a200-c84bb9a55228__="true"
+                          >
+                  ...
+
+[01:56:41.700] Browser LOG     Initializing PeerJS with ID: 223309
+[01:56:41.700] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:56:41.700] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:56:41.701] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764007868590}
+[01:56:41.701] Browser LOG     My peer ID is: 223309
+[02:12:31.321] Server  LOG      ✓ Compiled in 540ms
+[02:12:31.709] Browser LOG     Initializing PeerJS with ID: 223309
+[02:12:32.699] Browser LOG     My peer ID is: 223309
+[02:13:04.967] Server  LOG      ✓ Compiled in 781ms
+[02:13:10.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:13:13.722] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+-                           __processed_95e80660-51c7-43b5-8343-3682d0b504dd__="true"
+                          >
+                  ...
+
+[02:13:13.722] Browser LOG     Initializing PeerJS with ID: 223309
+[02:13:13.722] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:13:13.722] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:13:13.722] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764008860953}
+[02:13:14.698] Browser LOG     My peer ID is: 223309
+[02:13:25.818] Server  LOG      ✓ Compiled in 365ms
+[02:13:26.696] Browser ERROR   ./components/apps/files.tsx:92:10
+Ecmascript file had an error
+  90 |     : allFiles.filter(f => f.category === activeCategory)
+  91 |
+> 92 |   const [selectedFile, setSelectedFile] = useState<FileItem | null>(null)
+     |          ^^^^^^^^^^^^
+  93 |
+  94 |   const getFileIcon = (type: string) => {
+  95 |     switch (type) {
+
+the name `selectedFile` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:13:26.696] Browser ERROR   ./components/apps/files.tsx:92:24
+Ecmascript file had an error
+  90 |     : allFiles.filter(f => f.category === activeCategory)
+  91 |
+> 92 |   const [selectedFile, setSelectedFile] = useState<FileItem | null>(null)
+     |                        ^^^^^^^^^^^^^^^
+  93 |
+  94 |   const getFileIcon = (type: string) => {
+  95 |     switch (type) {
+
+the name `setSelectedFile` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:13:32.502] Server  LOG      ✓ Compiled in 284ms
+[02:13:32.719] Browser ERROR   ./components/apps/files.tsx:93:10
+Ecmascript file had an error
+  91 |     : allFiles.filter(f => f.category === activeCategory)
+  92 |
+> 93 |   const [selectedFile, setSelectedFile] = useState<FileItem | null>(null)
+     |          ^^^^^^^^^^^^
+  94 |
+  95 |   const getFileIcon = (type: string) => {
+  96 |     switch (type) {
+
+the name `selectedFile` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:13:32.719] Browser ERROR   ./components/apps/files.tsx:93:24
+Ecmascript file had an error
+  91 |     : allFiles.filter(f => f.category === activeCategory)
+  92 |
+> 93 |   const [selectedFile, setSelectedFile] = useState<FileItem | null>(null)
+     |                        ^^^^^^^^^^^^^^^
+  94 |
+  95 |   const getFileIcon = (type: string) => {
+  96 |     switch (type) {
+
+the name `setSelectedFile` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:13:51.257] Server  LOG      ✓ Compiled in 371ms
+[02:13:51.749] Browser ERROR   ./components/apps/files.tsx:93:10
+Ecmascript file had an error
+  91 |     : allFiles.filter(f => f.category === activeCategory)
+  92 |
+> 93 |   const [selectedFile, setSelectedFile] = useState<FileItem | null>(null)
+     |          ^^^^^^^^^^^^
+  94 |
+  95 |   const getFileIcon = (type: string) => {
+  96 |     switch (type) {
+
+the name `selectedFile` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:13:51.749] Browser ERROR   ./components/apps/files.tsx:93:24
+Ecmascript file had an error
+  91 |     : allFiles.filter(f => f.category === activeCategory)
+  92 |
+> 93 |   const [selectedFile, setSelectedFile] = useState<FileItem | null>(null)
+     |                        ^^^^^^^^^^^^^^^
+  94 |
+  95 |   const getFileIcon = (type: string) => {
+  96 |     switch (type) {
+
+the name `setSelectedFile` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./components/apps/files.tsx [Client Component Browser]
+    ./components/app-window.tsx [Client Component Browser]
+    ./components/mobile-frame.tsx [Client Component Browser]
+    ./components/web-os.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/apps/files.tsx [Client Component SSR]
+    ./components/app-window.tsx [Client Component SSR]
+    ./components/mobile-frame.tsx [Client Component SSR]
+    ./components/web-os.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[02:16:42.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:16:44.697] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-gray-950"
+-                           __processed_279f8a0f-730a-4b97-b2d2-2122f070787f__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+                          >
+                  ...
+
+[02:16:44.697] Browser LOG     Initializing PeerJS with ID: 223309
+[02:16:44.697] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:16:44.697] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:16:44.697] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764009071277}
+[02:16:44.697] Browser LOG     My peer ID is: 223309
+[02:34:27.640] Server  LOG      ✓ Compiled in 525ms
+[02:36:46.912] Server  LOG      ✓ Compiled in 567ms
+[02:36:47.108] Browser LOG     Initializing PeerJS with ID: 223309
+[02:36:47.517] Browser LOG     My peer ID is: 223309
+[02:38:01.641] Server  LOG      ✓ Compiled in 1040ms
+[02:42:09.969] Server  LOG      ✓ Compiled in 370ms
+[02:46:14.043] Server  LOG      ✓ Compiled in 238ms
+[02:46:22.773] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:46:23.207] Browser LOG     Initializing PeerJS with ID: 868548
+[02:46:23.207] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:46:23.207] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:46:23.207] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.0.0.51:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.0.0.51:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764010851290}
+[02:46:24.204] Browser LOG     My peer ID is: 868548
+[02:46:46.016] Server  LOG      ✓ Compiled in 267ms
+[02:50:46.507] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:50:46.688] Browser LOG     Initializing PeerJS with ID: 868548
+[02:50:46.688] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:50:46.688] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:50:46.688] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://10.0.0.51:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://10.0.0.51:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764011114807}
+[02:50:47.605] Browser LOG     My peer ID is: 868548
