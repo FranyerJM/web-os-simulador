@@ -68,7 +68,7 @@ export const Phone = () => {
                               onChange={e => setNewContactName(e.target.value)}
                               className="w-full mb-4 p-3 border rounded-xl dark:bg-gray-700 dark:border-gray-600 dark:text-white outline-none focus:ring-2 focus:ring-blue-500"
                            />
-                           <button onClick={handleAddContact} disabled={!newContactName} className="w-full bg-blue-500 disabled:bg-gray-300 text-white py-3 rounded-xl font-bold shadow-lg">Guardar</button>
+                           <button onClick={handleAddContact} disabled={!newContactName || dialNumber.length !== 6} className="w-full bg-blue-500 disabled:bg-gray-300 text-white py-3 rounded-xl font-bold shadow-lg">Guardar</button>
                         </DialogContent>
                      </Dialog>
                   )}

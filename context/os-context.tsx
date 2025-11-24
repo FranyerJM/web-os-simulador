@@ -278,11 +278,18 @@ export const OSProvider: React.FC<{ children: React.ReactNode }> = ({ children }
 
       const peer = new Peer(myPhoneNumber, {
         debug: 2,
+        host: '0.peerjs.com',
+        port: 443,
+        path: '/',
+        secure: true,
         config: {
           iceServers: [
+            // STUN servers
             { urls: 'stun:stun.l.google.com:19302' },
+            { urls: 'stun:stun1.l.google.com:19302' },
+            { urls: 'stun:stun2.l.google.com:19302' },
             { urls: 'stun:global.stun.twilio.com:3478' },
-            // TURN servers for NAT traversal (permite conexiones entre diferentes redes)
+            // TURN servers públicos para NAT traversal
             {
               urls: 'turn:openrelay.metered.ca:80',
               username: 'openrelayproject',
@@ -298,7 +305,9 @@ export const OSProvider: React.FC<{ children: React.ReactNode }> = ({ children }
               username: 'openrelayproject',
               credential: 'openrelayproject'
             }
-          ]
+          ],
+          iceTransportPolicy: 'all', // Permite conexiones directas, STUN y TURN
+          iceCandidatePoolSize: 10
         }
       })
 
