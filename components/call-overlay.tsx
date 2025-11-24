@@ -25,6 +25,7 @@ export const CallOverlay = () => {
   useEffect(() => {
     if (activeCall?.remoteStream && audioRef.current) {
       audioRef.current.srcObject = activeCall.remoteStream
+      audioRef.current.volume = 1.0 // Ensure volume is at maximum
       audioRef.current.play().catch(e => console.error("Error playing audio", e))
     }
   }, [activeCall?.remoteStream])
@@ -39,7 +40,7 @@ export const CallOverlay = () => {
 
   return (
     <div className="absolute inset-0 z-[100] bg-gray-900/95 backdrop-blur-md flex flex-col items-center justify-between py-12 text-white animate-in fade-in zoom-in-95 duration-300">
-      <audio ref={audioRef} className="hidden" />
+      <audio ref={audioRef} autoPlay playsInline className="hidden" />
 
       <div className="flex flex-col items-center mt-8">
         <div className="w-32 h-32 bg-gray-700 rounded-full flex items-center justify-center text-5xl mb-6 shadow-2xl border-4 border-gray-800">
