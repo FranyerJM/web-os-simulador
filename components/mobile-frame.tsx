@@ -5,6 +5,7 @@ import { HomeScreen } from '@/components/screens/home-screen'
 import { AppWindow } from '@/components/app-window'
 import { Taskbar } from '@/components/taskbar'
 import { CallOverlay } from '@/components/call-overlay'
+import { MessageAlert } from '@/components/message-alert'
 import { useEffect, useState } from 'react'
 import { ChevronDown, Wifi, WifiOff, Battery, Signal } from 'lucide-react'
 
@@ -54,6 +55,7 @@ export const MobileFrame = () => {
       style={{ width: size.width, height: size.height }}
     >
       <CallOverlay />
+      <MessageAlert />
 
       <div
         className="absolute top-0 left-0 right-0 h-8 px-6 flex items-center justify-between z-50 text-white select-none"
@@ -70,7 +72,7 @@ export const MobileFrame = () => {
               }
             }}
             className={`w-2 h-2 rounded-full ${peerStatus === 'connected' ? 'bg-green-500' :
-                peerStatus === 'connecting' ? 'bg-yellow-500' : 'bg-red-500 cursor-pointer animate-pulse'
+              peerStatus === 'connecting' ? 'bg-yellow-500' : 'bg-red-500 cursor-pointer animate-pulse'
               }`} title={`Red: ${peerStatus} (Click para reconectar)`} />
           {wifiEnabled ? (
             <Wifi size={14} className={connectedNetwork ? "text-white" : "text-gray-500"} />

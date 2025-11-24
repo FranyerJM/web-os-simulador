@@ -327,6 +327,9 @@ export const OSProvider: React.FC<{ children: React.ReactNode }> = ({ children }
           }
 
           const contact = contacts.find(c => c.number === call.peer)
+          // Send notification for incoming call
+          addNotification({ title: 'Llamada entrante', message: contact?.name || call.peer, appId: 'phone' })
+
           return {
             number: call.peer,
             name: contact?.name,
