@@ -113,6 +113,14 @@ export const appsConfig: AppsConfig = {
       url: 'https://ajedrez-pregunton.vercel.app/',
       favicon: 'https://cdn-icons-png.flaticon.com/512/2500/2500116.png',
       description: 'app de ajedrez para jugar con preguntas',
+    },
+    {
+      id: 'soundfly',
+      name: 'Soundfly',
+      url: 'https://soundfly.es/',
+      favicon: 'https://play-lh.googleusercontent.com/Okk7wR8AFtj7Kn4zCVrqksngb1UghV7_MtwLtmXqG3_qm6bYTWjwf7Hca9BeFDlmPp5HFX69wHPZ9IIXjrRMnSQ',
+      description: 'app donde encontraras todas tus canciones favoritas',
     }
+
   ],
 }
